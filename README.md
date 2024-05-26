@@ -40,7 +40,7 @@ Instalar o projeto usando docker (WIP)
 ## Arquitetura
 
 ### C4 nivel 1
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](img/c4model-l1.png)
 
 ### C4 nivel 2
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
