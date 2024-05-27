@@ -28,6 +28,8 @@ Um dos principais requisitos é a instalação das ferramentas do java.
 Alguns outros são os cadastros nas ferramentas que usaremos com nosso projeto.
 * [Sentry Account](https://quarkus.io/guides/getting-started)
 * [Codacy](https://www.codacy.com/signup-codacy)
+* [VsCode](https://code.visualstudio.com/)
+* [Drawio-Plugin](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 
 ## Instalação
 
@@ -39,11 +41,11 @@ Instalar o projeto usando docker (WIP)
     
 ## Arquitetura
 
-### C4 nivel 1
+### C4 Model - nível 1 - Context
 ![App Screenshot](img/c4model-l1.png)
 
-### C4 nivel 2
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### C4 model - nível 2 - Container
+![App Screenshot](img/c4model-l2.png)
 
 
 ## Usage/Examples
