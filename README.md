@@ -33,11 +33,25 @@ Alguns outros são os cadastros nas ferramentas que usaremos com nosso projeto.
 
 ## Instalação
 
-Instalar o projeto usando docker (WIP)
+Baixe o projeto do github: 
+
+[Projeto Guia de Referencia](https://github.com/rodrigoror/pa-igti-guia-de-referencia.git)
+
+Instalar o projeto
 
 ```bash
+  mvn clean install
+
   ./mvnw quarkus:dev
 ```
+Agora usando o Postman (ou outra ferramenta de sua preferencia) realize o get para http://localhost:8080/hello O resultado sera similar ao mostrado a seguir
+
+```
+curl --location 'http://localhost:8080/hello'
+
+Hello RESTEasy
+```
+
     
 ## Arquitetura
 
@@ -47,6 +61,8 @@ Instalar o projeto usando docker (WIP)
 ### C4 model - nível 2 - Container
 ![App Screenshot](img/c4model-l2.png)
 
+### C4 model - nível 3 - Container
+![App Screenshot](img/c4model-l3.png)
 
 ## Usage/Examples
 
