@@ -51,8 +51,15 @@ curl --location 'http://localhost:8080/hello'
 
 Hello RESTEasy
 ```
+## Pilares
+No livro de [Robert Martin](https://www.amazon.com.br/Livros-Robert-C-Martin/s?rh=n%3A6740748011%2Cp_27%3ARobert+C.+Martin), há diversas explicações e justificativas sobre o estilo arquitetural que vamos usar nesse projeto, mas principalmente: 
 
-    
+### Testabilidade 
+A possibilidade de testar, inclusive a arquitetura nos permite manter o sistema atendendo os requisitos por muito mais tempo.
+
+### Desacoplamento
+A manutenabilidade continuará a ser um ponto de referência desta arquitetura, mesmo após anos e várias equipes depois.
+
 ## Arquitetura
 
 ### C4 Model - nível 1 - Context
