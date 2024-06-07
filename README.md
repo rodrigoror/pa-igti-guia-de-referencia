@@ -31,6 +31,7 @@ Alguns outros são os cadastros nas ferramentas que usaremos com nosso projeto.
 * [VsCode](https://code.visualstudio.com/)
 * [Drawio-Plugin](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 
+
 ## Instalação
 
 Baixe o projeto do github: 
@@ -51,7 +52,7 @@ curl --location 'http://localhost:8080/hello'
 
 Hello RESTEasy
 ```
-## Pilares
+## Pilares do Clean Code
 No livro de [Robert Martin](https://www.amazon.com.br/Livros-Robert-C-Martin/s?rh=n%3A6740748011%2Cp_27%3ARobert+C.+Martin), há diversas explicações e justificativas sobre o estilo arquitetural que vamos usar nesse projeto, mas principalmente: 
 
 ### Testabilidade 
