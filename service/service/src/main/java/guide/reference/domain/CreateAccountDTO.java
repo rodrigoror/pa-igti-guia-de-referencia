@@ -1,14 +1,11 @@
 package guide.reference.domain;
 
+import java.time.LocalDate;
+
 public class CreateAccountDTO {
-    private Account account;
+    public String name;
+    public LocalDate birth;
+    public Long document;
+    //implementar address and phone
 
-    public CreateAccountDTO(Account account) {
-        this.account = account;
-    }
-
-
-
-    
-    
 }
