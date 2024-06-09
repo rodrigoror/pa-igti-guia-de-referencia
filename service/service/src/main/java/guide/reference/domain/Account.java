@@ -1,10 +1,14 @@
 package guide.reference.domain;
 
 import java.util.List;
+import java.util.UUID;
 
 public class Account {
-    private Person person;
-    private List<Address> addresses;
-    private List<Phone> phones;
+    public UUID id;
+    public String name;
+    public Long document;
+    public Person person;
+    public List<Address> addresses;
+    public List<Phone> phones;
 
 }

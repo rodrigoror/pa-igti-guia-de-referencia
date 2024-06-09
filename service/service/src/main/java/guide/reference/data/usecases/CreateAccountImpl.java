@@ -4,6 +4,7 @@ import guide.reference.data.interfaces.AccountRepository;
 import guide.reference.domain.Account;
 import guide.reference.domain.CreateAccount;
 import guide.reference.domain.CreateAccountDTO;
+import jakarta.transaction.Transactional;
 
 public class CreateAccountImpl implements CreateAccount {
 
@@ -11,6 +12,7 @@ public class CreateAccountImpl implements CreateAccount {
     
     
     @Override
+    @Transactional
     public Account create(CreateAccountDTO accountDTO) {
         validateAccount(accountDTO);
         return this.accountRepository.create(accountDTO);
