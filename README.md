@@ -13,8 +13,9 @@ Uma arquitetura corporativa bem definida não apenas guia os processos de desenv
 
 ## Indice 
 * [Requisitos](#requisitos)
-* [Installation](#installation)
-* [Arquitetura](#Arquitetura)
+* [Instalação](#Instalacao)
+* [Referência](#referencia)
+* [Arquitetura](#arquitetura)
 * [Exemplos](#usageexamples)
 * [Stack](#tech-stack)
 * [Contribuições](#contributing)
@@ -60,6 +61,13 @@ A possibilidade de testar, inclusive a arquitetura nos permite manter o sistema 
 
 ### Desacoplamento
 A manutenabilidade continuará a ser um ponto de referência desta arquitetura, mesmo após anos e várias equipes depois.
+
+## Referências
+
+[Uncle bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+[Architecure Test - Archunit](https://www.archunit.org/)
+
 
 ## Arquitetura
 

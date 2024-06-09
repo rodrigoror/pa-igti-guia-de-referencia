@@ -1,4 +1,5 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.import.gradle.java.home": "$JAVA_HOME"
+    "java.import.gradle.java.home": "$JAVA_HOME",
+    "jdk.advanced.disable.nbjavac": false
 }
