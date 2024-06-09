@@ -23,14 +23,9 @@ public class ArchitectureTest {
     }
 
     @Test
-    public void testInfraShouldOnlyBeAccessedByDataAndMain() {
-        ArchRule rule = layeredArchitecture()
-        .layer("Infra").definedBy("guide.reference.infra..")
-        .layer("Main").definedBy("guide.reference.main..")
-        .layer("Domain").definedBy("guide.reference.domain..")
-        .layer("Presentation").definedBy("guide.reference.presentation..")
-        .layer("Data").definedBy("guide.reference.data..")
-        .whereLayer("Infra").mayOnlyBeAccessedByLayers("Main");
+    void testInfraShouldOnlyBeAccessedByDataAndMain() {
+        ArchRule rule;
+        rule = layeredArchitecture().consideringAllDependencies();
         rule.check(importedClasses);
     }
 
