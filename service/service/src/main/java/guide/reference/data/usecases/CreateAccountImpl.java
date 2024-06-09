@@ -10,6 +10,9 @@ public class CreateAccountImpl implements CreateAccount {
 
     private AccountRepository accountRepository;
     
+    public CreateAccountImpl(AccountRepository accountRepository){
+        this.accountRepository = accountRepository;
+    }
     
     @Override
     @Transactional
