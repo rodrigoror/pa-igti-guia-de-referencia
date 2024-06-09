@@ -23,7 +23,7 @@ public class PanacheAccountRepository implements AccountRepository {
 
     @Override
     public Account findById(UUID uuid) {
-        //to be implemented
+        //to be implemented/to be implemented
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
