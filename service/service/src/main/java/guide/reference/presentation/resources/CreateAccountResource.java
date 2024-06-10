@@ -6,6 +6,7 @@ import org.jboss.logging.Logger;
 import guide.reference.domain.Account;
 import guide.reference.domain.CreateAccountDTO;
 import guide.reference.main.CreateAccountService;
+import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;

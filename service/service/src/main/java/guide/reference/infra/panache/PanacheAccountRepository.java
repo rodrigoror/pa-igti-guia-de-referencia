@@ -11,7 +11,7 @@ import jakarta.transaction.Transactional;
 public class PanacheAccountRepository implements AccountRepository {
 
     private static final String HQL_SELECT_BY_DOCUMENT = 
-        "SELECT account FROM account where account.document = :document";
+        "SELECT account FROM MySqlAccount where account.document = :document";
         
         
     @Override
@@ -28,6 +28,7 @@ public class PanacheAccountRepository implements AccountRepository {
     }
 
     @Override
+    @Transactional
     public Account create(CreateAccountDTO accountDTO) {
         PanacheAccount pAccount = new PanacheAccount();
         pAccount.name = accountDTO.name;
