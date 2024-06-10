@@ -8,5 +8,5 @@ import guide.reference.domain.CreateAccountDTO;
 public interface AccountRepository {
     Account findById(UUID uuid);
     Account findByDocument(Long document);
-    Account create(CreateAccountDTO account);
+    Account create(CreateAccountDTO accountDTO);
 }

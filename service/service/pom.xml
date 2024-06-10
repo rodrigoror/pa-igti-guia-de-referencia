@@ -108,6 +108,10 @@
             <version>1.3.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-opentelemetry</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

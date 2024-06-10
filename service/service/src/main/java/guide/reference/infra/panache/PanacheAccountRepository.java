@@ -28,10 +28,10 @@ public class PanacheAccountRepository implements AccountRepository {
     }
 
     @Override
-    public Account create(CreateAccountDTO account) {
+    public Account create(CreateAccountDTO accountDTO) {
         PanacheAccount pAccount = new PanacheAccount();
-        pAccount.name = account.name;
-        pAccount.document = account.document;
+        pAccount.name = accountDTO.name;
+        pAccount.document = accountDTO.document;
         //implement others
 
         pAccount.persist();
