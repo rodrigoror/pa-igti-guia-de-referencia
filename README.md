@@ -3,7 +3,7 @@
 
 # Guia de Referência para uma arquitetura de software com ênfase em observabilidade e qualidade de software.
 
-Uma arquitetura corporativa bem definida não apenas guia os processos de desenvolvimento de software, mas também fomenta a integração de sistemas, a reutilização de componentes e a manutenção da consistência em todas as soluções desenvolvidas
+Uma arquitetura corporativa que descreve uma abordagem prática e interativa para aprender Clean Architecture utilizando Java e Quarkus, enfatizando a leitura de código e a navegação pelos READMEs do projeto para entender a separação de camadas e a implementação dos princípios arquiteturais. Através da análise e modificação do código fonte, os desenvolvedores irão solidificar seu conhecimento teórico e obter insights práticos sobre boas práticas de codificação e design de software, resultando em sistemas mais robustos e escaláveis.
 
 ## Licenças
 
@@ -13,13 +13,14 @@ Uma arquitetura corporativa bem definida não apenas guia os processos de desenv
 
 ## Indice 
 * [Requisitos](#requisitos)
-* [Instalação](#Instalacao)
+* [Instalação](#instalacao)
 * [Referência](#referencia)
 * [Arquitetura](#arquitetura)
 * [Stack](#tech-stack)
-* [Contribuições](#contributing)
+* [Contribuições](#contribuições)
 * [FAQ](#faq)
-
+* [O que iremos aprender?](#o-que-aprenderei)
+* [Como?](#como)
 
 ## Requisitos
 Um dos principais requisitos é a instalação das ferramentas do java.
@@ -87,10 +88,9 @@ A manutenabilidade continuará a ser um ponto de referência desta arquitetura, 
 **BugTracking:** Sentry
 
 
-## Contributing
+## Contribuições
 
 Contribuições são sempre bem vindas
-
 
 ## FAQ
 
@@ -102,11 +102,11 @@ Enviando sua issue ou um PR melhorando a arquitetura de referência.
 
 Claro, apenas não se esqueça de agradecer e ajudar a comunidade, assim q seu projeto chegar ao MVP.
 
-# O que você irá aprender aqui?
+# O que aprenderei?
 
 Se você chegou até aqui quer dizer que sua vontade de aprender esse assunto de maneira sólida e definitiva, continua ardente. O passo a passo para configurar e fazer funcionar, foi mostrado anteriormente. Agora, vamos aprender o motivo, as motivações e as recomendações técnicas para a aplicação.
 
-## O que? 
+## O que ? 
 
 O projeto foi desenvolvido com o objetivo de auxiliar novos entrantes no campo da arquitetura de software, especialmente desenvolvedores que ainda estão tentando entender como transformar um desenho arquitetural teórico em uma aplicação prática. A ideia é seguir o código, explorando a relação prática entre cada componente ou camada da arquitetura, avançando gradualmente conforme fornecemos uma descrição prática e teórica robusta sobre cada tópico abordado.
 

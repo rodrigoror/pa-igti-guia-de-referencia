@@ -1,12 +1,30 @@
-# service
+# Código do Serviço
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Este documento delineia uma abordagem técnica e prática para a aprendizagem da Clean Architecture utilizando Java e Quarkus. A metodologia enfatiza a análise detalhada do código-fonte e a navegação pelos READMEs do projeto para compreender a estrutura e a interação das camadas arquiteturais. Os desenvolvedores serão orientados a observar a implementação de princípios como a inversão de dependência, a separação de responsabilidades e a modularidade, aplicando modificações e incrementos no código para reforçar o entendimento teórico. Esta prática visa promover a assimilação de padrões arquiteturais e de design, resultando em soluções de software mais robustas, escaláveis e de fácil manutenção.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+## Verificando Requisitos
 
-## Running the application in dev mode
+Se até aqui, vc nao tinha baixado o projeto e o irá fazê-lo, verifique se os requisitos a seguir estão de acordo
 
-You can run your application in dev mode that enables live coding using:
+```shell script
+java --version
+#result: 
+java 21.0.1 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+
+mvn --version
+#result: 
+Apache Maven 3.9.5 (57804ffe001d7215b5e7bcb531cf83df38f93546)
+Maven home: C:\Users\rodri\devs\sdk\apache-maven-3.9.5-bin\apache-maven-3.9.5
+Java version: 21.0.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
+```
+
+## Rodar a aplicação
+Você pode rodar a aplicação apenas usando o comando a seguir
 ```shell script
 ./mvnw compile quarkus:dev
 ```
