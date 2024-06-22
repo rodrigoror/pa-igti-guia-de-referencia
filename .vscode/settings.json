@@ -1,5 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.import.gradle.java.home": "$JAVA_HOME",
-    "jdk.advanced.disable.nbjavac": false
+    "jdk.advanced.disable.nbjavac": false,
+    "java.compile.nullAnalysis.mode": "automatic"
 }
