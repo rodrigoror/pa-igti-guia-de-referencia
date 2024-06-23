@@ -1,28 +1,39 @@
 # Capitulo 2 - Arquitetura e divisão de camadas
-
-Já falamos bastante sobre o que é o Clean Architecture e para que ele serve. Se você chegou até aqui, você deve saber, ao menos na teoria. Correto? 
-Lembrando apenas que a divisão de camadas ocorre no código e na interação entre os arquivos. A separação de pastas é apenas para organização e não representa realmente a divisão lógica. 
+Neste capítulo, aprofundaremos nosso entendimento sobre a Clean Architecture e como ela é aplicada na prática. Se você acompanhou até aqui, já deve ter uma boa compreensão teórica desse conceito. Vale lembrar que a divisão de camadas se reflete no código e na interação entre os arquivos, e a organização em pastas serve apenas para facilitar a gestão, não representando a divisão lógica em si.
 
 ## Falta algo?
 
-A Clean Architecture é a arquitetura de divisão de camadas mais usada, a mais simples e a que mais se encontram problemas na implementação. 
-Ela é mais usada em ambientes enterprise pois permite um codigo limpo e com uma manutenabilidade alta. 
-É a mais simples, pois deixa claro sobre o que deve se comunicar com o que, facilitando a relação entre interfaces e, consequentemente, camadas.
-E percebemos em uma pesquisa no github, que existem inumeros projetos com a intensao de ser Clean Arch, mas que causou um problema grave de acoplamento, ou ainda, que se perdeu nas camadas, deixando itens erroneamente em camadas que não deveriam conter um domain, por exemplo. 
-Agora é importante que possamos clarificar esses pontos e começar a separar as camadas. 
+A Clean Architecture é amplamente utilizada, especialmente em ambientes empresariais, devido à sua capacidade de promover código limpo e altamente manutenível. Apesar de sua simplicidade aparente, que facilita a definição clara de comunicações entre interfaces e camadas, sua implementação frequentemente enfrenta problemas. Muitos projetos no GitHub, ao tentar seguir a Clean Architecture, acabam introduzindo graves problemas de acoplamento ou colocando itens incorretamente em camadas erradas, como domains sendo colocados em locais inadequados.
+
+Para evitar esses problemas, é crucial entender claramente a separação e a interação entre as camadas. Vamos agora detalhar cada uma dessas camadas.
 
 ## Camadas
-
-A seguir vamos ver como estão divididas as camadas do projeto e como elas se dividem e interagem entre si.
-
-### Data
-Aqui estarão todos os contratos de caso de uso do sistema, onde estarão diretamente ligados as Application Bussines Rules, ou seja, as regras de negócio especificas. São contratos das funcionalidades que a aplicação terá.
+A seguir, descreveremos como as camadas do projeto são divididas e como elas interagem entre si.
 
 ### Domain
-Aqui definiremos nossos contratos de caso de uso e definiremos as entidades do sistema. Está diretamente relacionado com as Enterprise Business Rules, ou seja, as entidades ligadas a aplicação.
+A camada de Domain é onde definimos os contratos de caso de uso e as entidades do sistema. Esta camada está diretamente relacionada às Enterprise Business Rules, ou seja, às regras de negócio essenciais da aplicação. Ela deve permanecer independente de outras camadas, focando exclusivamente na lógica de negócios.
+
+[Entities/Domain](C:\Users\rodri\devs\arch\pa-igti-guia-de-referencia\service\service\src\main\java\guide\reference\domain\README.md)
+
+### Data
+Na camada de Data, estão todos os contratos de caso de uso específicos do sistema, ligados às Application Business Rules. Esta camada define as funcionalidades que a aplicação terá, implementando as regras de negócio específicas. Ela serve como um intermediário entre a lógica de negócios e as operações de infraestrutura.
+[Use Case/Data](C:\Users\rodri\devs\arch\pa-igti-guia-de-referencia\service\service\src\main\java\guide\reference\data\README.md)
 
 ### Infra
-Esta camada trata da comunicação com frameworks e bibliotecas externas. 
-### Main
+A camada de Infra lida com a comunicação com frameworks e bibliotecas externas. Esta é a camada mais externa, conectando o sistema a elementos externos, como frameworks, bibliotecas e interfaces. A Infra deve ser isolada para garantir que mudanças externas não afetem a lógica interna da aplicação.
+[Frameworks & Drivers](C:\Users\rodri\devs\arch\pa-igti-guia-de-referencia\service\service\src\main\java\guide\reference\infra\README.md)
+
 ### Presentation
+A camada de Presentation atua como a porta de entrada da aplicação, disponibilizando recursos através de APIs RESTful. Esta camada é responsável por interagir diretamente com o usuário final, recebendo e processando suas solicitações antes de encaminhá-las para as camadas internas.
+[Interface Adapters/Presenters](C:\Users\rodri\devs\arch\pa-igti-guia-de-referencia\service\service\src\main\java\guide\reference\presentation\README.md)
+
+
+### Main
+A camada Main é uma divisão auxiliar que integra componentes de todas as outras camadas e fornece os dados necessários para a camada de Presentation. Ela detalha as operações de cada caso de uso e gerencia a execução dentro do fluxo de requisição, coordenando a interação entre as diversas camadas.
+[Interface Adapters/Controllers](C:\Users\rodri\devs\arch\pa-igti-guia-de-referencia\service\service\src\main\java\guide\reference\main\README.md)
+
+## Estrutura
+
+Com esta estrutura bem definida, podemos avançar com confiança, aplicando a Clean Architecture de forma prática e eficiente, evitando os erros comuns de implementação e garantindo um código limpo e sustentável.
+
 
