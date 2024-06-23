@@ -39,20 +39,6 @@ Baixe o projeto do github:
 
 [Projeto Guia de Referencia](https://github.com/rodrigoror/pa-igti-guia-de-referencia.git)
 
-Instalar o projeto
-
-```bash
-  mvn clean install
-
-  ./mvnw quarkus:dev
-```
-Agora usando o Postman (ou outra ferramenta de sua preferencia) realize o get para http://localhost:8080/hello O resultado sera similar ao mostrado a seguir
-
-```
-curl --location 'http://localhost:8080/hello'
-
-Hello RESTEasy
-```
 ## Pilares do Clean Code
 No livro de [Robert Martin](https://www.amazon.com.br/Livros-Robert-C-Martin/s?rh=n%3A6740748011%2Cp_27%3ARobert+C.+Martin), há diversas explicações e justificativas sobre o estilo arquitetural que vamos usar nesse projeto, mas principalmente: 
 
@@ -87,10 +73,9 @@ A manutenabilidade continuará a ser um ponto de referência desta arquitetura, 
 **Code Quality:** Codacy
 **BugTracking:** Sentry
 
-
 ## Contribuições
 
-Contribuições são sempre bem vindas
+Contribuições são sempre bem vindas, crie um PR ou deixe sua issue.
 
 ## FAQ
 
