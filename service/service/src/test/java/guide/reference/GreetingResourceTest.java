@@ -13,8 +13,14 @@ class GreetingResourceTest {
         given()
           .when().get("/hello")
           .then()
-             .statusCode(200)
-             .body(is("Hello RESTEasy"));
+             .statusCode(404);
     }
-
+    @Test
+    void testOkEndpoint() {
+        given()
+          .when().get("/ok")
+          .then()
+             .statusCode(200)
+             .body(is("{\"message\":\"System check is ok\"}"));
+    }
 }
